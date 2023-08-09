@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Devices</title>
+</head>
+<body>
+    <h1>Devices</h1>
+    <ul>
+        {% for device in devices %}
+        <li>Device ID: {{ device.device_id }}</li>
+        <li>Apartment ID: {{ device.apartment_id }}</li>
+        <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
